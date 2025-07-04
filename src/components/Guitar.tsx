@@ -1,8 +1,8 @@
-import type { Guitar } from "../types/types";
+import type { GuitarData } from "../types/types";
 
 export type GuitarProps = {
-    guitar : Guitar,
-    addToCart: (item: Guitar) => void
+    guitar : GuitarData,
+    addToCart: (item: GuitarData) => void
 }
 
 // * Componente Guitar

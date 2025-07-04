@@ -1,4 +1,4 @@
-export type Guitar = {
+export type GuitarData = {
     id: number;
     name: string;
     image: string
@@ -6,8 +6,8 @@ export type Guitar = {
     price: number
 }
 
-export type GuitarItem = Guitar & {
+export type GuitarItem = GuitarData & {
     quantity: number
 }
 
-export type IdGuitarItem = Guitar['id']
+export type IdGuitarItem = GuitarData['id']
