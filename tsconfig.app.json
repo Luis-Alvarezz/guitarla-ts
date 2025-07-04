@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", //*
     "target": "ES2022",
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
@@ -10,7 +10,7 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": true, // *
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
@@ -19,9 +19,9 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
+    "erasableSyntaxOnly": true, // *
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": false // * Esto me daba problemas para importar mi index.css en mi main.tsx
   },
   "include": ["src"]
 }
